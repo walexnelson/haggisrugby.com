@@ -1,7 +1,13 @@
 {{ define "main" }}
 
-<h1>Nothing Here...</h1>
-<h2 style="font-size: 120px; margin:0;">💩</h2>
-<h3><a href="{{ "/" | relURL }}">Go Home</a></h3>
+<article class="not-found">
+  <header><h1>#HTG</h1></header>
+
+  <div class="dead-goat">
+    {{ readFile "static/images/dead-goat.svg"| safeHTML }}
+  </div>
+
+  <h3><a href="{{ "/" | relURL }}">Go Home</a></h3>
+</article>
 
 {{ end }}

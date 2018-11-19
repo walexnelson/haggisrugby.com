@@ -7,16 +7,24 @@
   <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
   <title>{{ $.Site.Title }}</title>
 
+  <link href="https://assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  
   {{ $stylesheet := .Site.Data.webpack.main }}
   {{ with $stylesheet.css }}
     <link href="{{ relURL . }}" rel="stylesheet">
+  {{ end }}
+
+  {{ $stylesheet := .Site.Data.webpack.noscript }}
+  {{ with $stylesheet.css }}
+    <noscript><link rel="stylesheet" href="{{ relURL . }}" /></noscript>
   {{ end }}
 </head>
 </head>
 
 <body>
 
-  {{ block "header" . }}{{ partial "header" . }}{{end}}
+  {{ block "sidebar" . }}{{ partial "sidebar" . }}{{end}}
 
   {{ block "main" . }}{{end}}
 
@@ -26,6 +34,15 @@
   {{ with $script.js }}
     <script src="{{ relURL . }}"></script>
   {{ end }}
+
+  <script src="https://assets.juicer.io/embed.js" type="text/javascript"></script>
+  <script src="{{ "scripts/jquery.min.js" | relURL }}" type="text/javascript">  </script>
+  <script src="{{ "scripts/jquery.scrollex.min.js" | relURL }}" type="text/javascript"></script>
+  <script src="{{ "scripts/jquery.scrolly.min.js" | relURL }}" type="text/javascript"></script>
+  <script src="{{ "scripts/browser.min.js" | relURL }}" type="text/javascript"></script>
+  <script src="{{ "scripts/breakpoints.min.js" | relURL }}" type="text/javascript"></script>
+  <script src="{{ "scripts/hyperspace-util.js" | relURL }}" type="text/javascript"></script>
+  <script src="{{ "scripts/hyperspace.js" | relURL }}" type="text/javascript"></script>
 </body>
 
 </html>

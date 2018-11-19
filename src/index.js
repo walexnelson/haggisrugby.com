@@ -1,4 +1,7 @@
-import "./css/main.css";
+import juicer from './js/juicer';
 
-// Say hello
-console.log("🦊 Hello! Edit me in src/index.js");
+import './css/main.scss';
+
+global.fetch = require('whatwg-fetch');
+
+juicer();
