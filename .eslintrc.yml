@@ -20,3 +20,4 @@ globals:
   process: true
   ENV: true
   module: true
+  $: true

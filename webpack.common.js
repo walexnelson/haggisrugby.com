@@ -5,7 +5,7 @@ const AssetsPlugin = require('assets-webpack-plugin');
 
 module.exports = {
   entry: {
-    main: path.join(process.cwd(), 'src/index.js'),
+    main: ['@babel/polyfill', 'whatwg-fetch', path.join(process.cwd(), 'src/index.js')],
     noscript: path.join(process.cwd(), 'src/noscript.js'),
   },
 
