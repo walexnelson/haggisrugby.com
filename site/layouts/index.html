@@ -20,17 +20,17 @@
       </div>
     </section>
       
-  <section id="juicer" class="wrapper style3-alt">
+  <section id="juicer" class="wrapper alt">
     <div class="inner">
       <h2>Latest News</h2>
-          <p>
-            {{ with .Params.news }}{{ . }}{{ end }}
-          </p>
-          <section class="spotlights"></section>
-        </div>
+      <p>
+        {{ with .Params.news }}{{ . }}{{ end }}
+      </p>
+      <section class="spotlights"></section>
+    </div>
   </section>
 
-  <section id="sponsors" class="wrapper fade-up">
+  <section id="sponsors" class="wrapper style1-alt fade-up">
     <div class="inner">
       <h2>Our Sponsors</h2>
       <p>
@@ -38,58 +38,18 @@
       </p>
 
       <div class="features">
-        <section>
-          <span class="icon major fas fa-code"></span>
-          <h3>Lorem ipsum amet</h3>
-          <p>
-            Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat
-            dapibus.
-          </p>
-        </section>
-        <section>
-          <span class="icon major fas fa-lock"></span>
-          <h3>Aliquam sed nullam</h3>
-          <p>
-            Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat
-            dapibus.
-          </p>
-        </section>
-        <section>
-          <span class="icon major fas fa-cog"></span>
-          <h3>Sed erat ullam corper</h3>
-          <p>
-            Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat
-            dapibus.
-          </p>
-        </section>
-        <section>
-          <span class="icon major fas fa-desktop"></span>
-          <h3>Veroeros quis lorem</h3>
-          <p>
-            Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat
-            dapibus.
-          </p>
-        </section>
-        <section>
-          <span class="icon major fas fa-link"></span>
-          <h3>Urna quis bibendum</h3>
-          <p>
-            Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat
-            dapibus.
-          </p>
-        </section>
-        <section>
-          <span class="icon major fas fa-gem"></span>
-          <h3>Aliquam urna dapibus</h3>
-          <p>
-            Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat
-            dapibus.
-          </p>
-        </section>
+        {{ range.Pages.ByParam "priority" }}
+          <section class="sponsor">
+            <div class="brand"><img src="{{ .Params.image }}" alt="{{ .Title }}" /></div>
+            <div class="content">
+              <h3>
+                <a href="{{.Permalink}}">{{ .Title }}</a>
+              </h3>
+              {{ .Summary }}
+            </div>
+          </section>
+        {{ end }}
       </div>
-      <ul class="actions">
-        <li><a href="generic.html" class="button">Learn more</a></li>
-      </ul>
     </div>
   </section>
 

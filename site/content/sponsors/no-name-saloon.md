@@ -1,8 +1,8 @@
 ---
 title: No Name Saloon
 image: images/no-name-saloon.png
-kind: section
-section: sponsor
+type: sponsor
+priority: 3
 ---
 
 Today [No Name Saloon & Grill](http://www.nonamesaloon.com/) continues to be one of the most popular bars in Park City and is consistently voted the "Best Bar in Park City" by readers of the local Park Record newspaper. The bar has a lively atmosphere and is decorated with an eclectic collection of antiques from all over the world. Stop in and try their World Famous Buffalo Burger or some of their epic Buffalo Wings or choose something from their delicious pub menu. Belly up to the bar, enjoy a beverage and make a new friend.

@@ -11,7 +11,7 @@
     @include vendor('display', 'flex');
     @include vendor('flex-direction', 'row');
 
-    background-color: _palette(bg);
+    background-color: rgba(255, 255, 255, 0.05);
     border-radius: 4px;
     margin: 16px 0;
 
@@ -58,6 +58,15 @@
           ('opacity #{_duration(activation)} ease', 'transform #{_duration(activation)} ease')
         );
         opacity: 1;
+
+        .title {
+          font-size: 24px;
+          color: _palette(accent3);
+        }
+        .caption {
+          font-size: 16px;
+          color: _palette(accent3-alt);
+        }
       }
     }
 

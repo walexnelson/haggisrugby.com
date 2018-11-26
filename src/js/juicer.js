@@ -8,33 +8,36 @@ const fetchJuicerFeed = () => {
     .then(data => data.posts.items);
 };
 
+const formatDate = (dateString) => {
+  const date = new Date(dateString);
+
+  return date.toDateString();
+};
+
 const createArticle = (item) => {
   const section = document.createElement('section');
-  // section.innerHTML = `
-
-  // `;
-
-  const link = document.createElement('a');
-  link.setAttribute('href', item.full_url);
-  link.classList.add('image');
-
-  link.innerHTML = !item.image
-    ? '<img src="images/dead-goat.svg" alt="" data-position="center center"/>'
-    : `<img alt="${item.id}" src="${item.image}" data-position="center center" />`;
-
-  const content = document.createElement('div');
-  content.classList.add('content');
-
-  content.innerHTML = `
-    <div class="inner">
-      <h4><span class="fab fa-${item.source.source.toLowerCase()}"></span> ${item.source.term}</h4>
-    
-      ${item.message}
+  section.innerHTML = `
+    <a class="image" href="${item.full_url}" target="_blank">
+      <img 
+        alt="${item.feed}" 
+        data-position="center center" 
+        src="${item.image ? item.image : 'images/dead-goat.svg'}" 
+      />
+    </a>
+    <div class="content">
+      <div class="inner">
+        <h3 class="title">
+          <span class="fab fa-${item.source.source.toLowerCase()}"></span> 
+          ${item.source.term}
+        </h3>
+        <h4 class="caption">
+          <span class="far fa-clock"></span>
+          ${formatDate(item.external_created_at)}
+        </h4>
+        ${item.message}
+      </div>
     </div>
   `;
-
-  section.appendChild(link);
-  section.appendChild(content);
 
   return section;
 };
