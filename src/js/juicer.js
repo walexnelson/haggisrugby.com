@@ -21,7 +21,7 @@ const createArticle = (item) => {
       <img 
         alt="${item.feed}" 
         data-position="center center" 
-        src="${item.image ? item.image : 'images/dead-goat.svg'}" 
+        src="${item.image ? item.image : 'images/dead-goat-white.svg'}" 
       />
     </a>
     <div class="content">
