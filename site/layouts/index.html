@@ -1,31 +1,42 @@
 {{ define "main" }}
 
 <section id="wrapper">
-  <!-- Intro -->
   <section id="intro" class="wrapper style1 fullscreen fade-up">
+      <div class="inner">
+        <header>
+          <h1 class="title">{{ .Title }}</h1>
+          <h2 class="caption">{{ with .Params.subtitle }}{{ . }}{{ end }}</h1>
+        </header>
+    
+        <div class="content">
+          <div class="body">
+            <div class="image">
+              {{ with .Params.image }}<img src="{{ . | relURL }}" alt="Haggis Shield" />{{ end }}
+            </div>
+            {{ .Content }}
+          </div>
+        </div>
+      
+      </div>
+    </section>
+      
+  <section id="juicer" class="wrapper style3-alt">
     <div class="inner">
-      <h1>Hyperspace</h1>
-      <p>
-        Just another fine responsive site template designed by <a href="http://html5up.net">HTML5 UP</a><br />
-        and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.
-      </p>
-      <ul class="actions">
-        <li><a href="#one" class="button scrolly">Learn more</a></li>
-      </ul>
-    </div>
+      <h2>Latest News</h2>
+          <p>
+            {{ with .Params.news }}{{ . }}{{ end }}
+          </p>
+          <section class="spotlights"></section>
+        </div>
   </section>
 
-  <!-- One -->
-  <section id="one" class="wrapper style2 spotlights">{{ partial "juicer" }}</section>
-
-  <!-- Two -->
-  <section id="two" class="wrapper style3 fade-up">
+  <section id="sponsors" class="wrapper fade-up">
     <div class="inner">
-      <h2>What we do</h2>
+      <h2>Our Sponsors</h2>
       <p>
-        Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis.
-        Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.
+        {{ with .Params.sponsor }}{{ . }}{{ end }}
       </p>
+
       <div class="features">
         <section>
           <span class="icon major fas fa-code"></span>

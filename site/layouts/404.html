@@ -1,13 +1,18 @@
 {{ define "main" }}
 
-<article class="not-found">
-  <header><h1>#HTG</h1></header>
-
-  <div class="dead-goat">
-    {{ readFile "static/images/dead-goat.svg"| safeHTML }}
-  </div>
-
-  <h3><a href="{{ "/" | relURL }}">Go Home</a></h3>
-</article>
+<section id="wrapper">
+  <section class="wrapper style1 fullscreen special">
+    <div class="inner">
+      <h1>#HTG</h1>
+      <h3>Couldn't find the page you're looking for</h3>
+  
+      <div class="dead-goat">
+        {{ readFile "static/images/dead-goat.svg"| safeHTML }}
+      </div>
+  
+      <a href="{{ "/" | relURL }}">Go Home</a>
+    </div>
+  </section>
+</section>
 
 {{ end }}

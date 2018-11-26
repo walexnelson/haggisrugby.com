@@ -10,6 +10,10 @@ const fetchJuicerFeed = () => {
 
 const createArticle = (item) => {
   const section = document.createElement('section');
+  // section.innerHTML = `
+
+  // `;
+
   const link = document.createElement('a');
   link.setAttribute('href', item.full_url);
   link.classList.add('image');
@@ -55,10 +59,7 @@ module.exports = async () => {
   const items = await fetchJuicerFeed();
 
   const articles = items.map(createArticle);
-  const container = document.getElementById('juicer');
-  const parent = container.parentNode;
-
-  container.remove();
-  articles.forEach(el => parent.appendChild(el));
+  const container = document.querySelector('#juicer .spotlights');
+  articles.forEach(el => container.appendChild(el));
   initializeScroll();
 };
