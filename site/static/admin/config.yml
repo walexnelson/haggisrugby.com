@@ -6,16 +6,23 @@ media_folder: static/images
 public_folder: /images
 
 collections:
-  - name: 'pages'
-    label: 'Pages'
-    files:
-      - file: 'content/about.md'
-        label: 'About'
-        name: 'about'
-        fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Featured Image', name: 'thumbnail', widget: 'image' }
-          - { label: 'Body', name: 'body', widget: 'markdown' }
-          - { label: 'Draft', name: 'draft', widget: 'boolean', default: true }
+  - name: home
+    label: 'Home Page'
+    folder: content
+    file: _index.md
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Subtitle, name: subtitle, widget: string }
+      - { label: 'Main Image', name: image, widget: image }
+      - { label: 'Sponsor Message', name: sponsor, widget: markdown }
+      - { label: 'Latest News Message', name: news, widget: markdown }
+      - { label: About, name: body, widget: markdown }
   - name: sponsors
     label: 'Sponsors'
+    folder: 'content/sponsors'
+    create: true
+    delete: true
+    fields:
+      - { label: 'Name', name: 'title', widget: string }
+      - { label: 'Logo', name: 'image', widget: image }
+      - { label: 'Description', name: body, widget: markdown }
