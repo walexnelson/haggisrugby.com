@@ -1,8 +1,10 @@
 ---
-title: 'Pabst Blue Ribbon'
+title: Pabst Blue Ribbon
 image: images/pbr-square.png
-type: sponsor
 priority: 2
+type: sponsor
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non neque nibh. Suspendisse a justo interdum, laoreet libero eget, aliquet arcu. Cras interdum velit eros, eu gravida arcu dapibus a. Curabitur elementum dignissim lorem et pellentesque. Nunc lectus dui, imperdiet nec nibh sagittis, dictum laoreet metus. Vestibulum faucibus felis eget lorem luctus bibendum. Aliquam mattis, magna a vehicula suscipit, augue risus porta lacus, quis varius arcu arcu sed nisi. Aliquam volutpat ullamcorper viverra. Praesent venenatis porta molestie. Mauris vulputate dolor quis massa aliquam facilisis. Suspendisse rhoncus nisl massa, eu porta quam venenatis at.
+This is the original Pabst Blue Ribbon Beer. Nature's choicest products provide its prized flavor. Only the finest of hops and grains are used. Selected as America's Best in 1893.
+
+Thanks PBR for your support of Haggis Rugby. #HaggisTastesGood
