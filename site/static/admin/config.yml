@@ -2,14 +2,14 @@ backend:
   name: git-gateway
   branch: master
 
-media_folder: static/images
+media_folder: site/static/images
 public_folder: /images
 
 collections:
   - name: home
     label: 'Home Page'
-    folder: content
     file: _index.md
+    folder: site/content
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Subtitle, name: subtitle, widget: string }
@@ -19,10 +19,12 @@ collections:
       - { label: About, name: body, widget: markdown }
   - name: sponsors
     label: 'Sponsors'
-    folder: 'content/sponsors'
+    folder: 'site/content/sponsors'
     create: true
     delete: true
     fields:
       - { label: 'Name', name: 'title', widget: string }
       - { label: 'Logo', name: 'image', widget: image }
       - { label: 'Description', name: body, widget: markdown }
+      - { label: 'Sort Priority', name: priority, widget: number, default: 0 }
+      - { label: Type, name: type, widget: string, default: sponsor }
