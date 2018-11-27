@@ -1,8 +1,10 @@
 ---
 title: Huber Engineered Woods
 image: images/huber.png
-type: sponsor
-priority: 4
 ---
+Founded in 1883, the [J.M. Huber Corporation](http://www.huberwood.com/) has grown to be one of the largest family-owned companies in the U.S. We’re now a global company with approximately 4,000 employees in more than 20 countries. We are guided by a spirit of creativity and innovation that transforms ideas into products that meet the challenges of an evolving world. And we do all this while honoring a commitment to the Huber Principles:
 
-[Huber](http://www.huberwood.com/) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non neque nibh. Suspendisse a justo interdum, laoreet libero eget, aliquet arcu. Cras interdum velit eros, eu gravida arcu dapibus a. Curabitur elementum dignissim lorem et pellentesque. Nunc lectus dui, imperdiet nec nibh sagittis, dictum laoreet metus. Vestibulum faucibus felis eget lorem luctus bibendum. Aliquam mattis, magna a vehicula suscipit, augue risus porta lacus, quis varius arcu arcu sed nisi. Aliquam volutpat ullamcorper viverra. Praesent venenatis porta molestie. Mauris vulputate dolor quis massa aliquam facilisis. Suspendisse rhoncus nisl massa, eu porta quam venenatis at.
+- Environmental Health & Safety (EH&S) Sustainability
+- Ethical Behavior
+- Respect for People
+- Excellence
