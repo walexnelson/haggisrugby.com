@@ -68,6 +68,23 @@
       </div>
     </div>
   </section>
+
+  <section 
+    id="donate" 
+    class="wrapper alt fullscreen fade-up"
+    style="background-image: url('{{ "images/dead-goat.svg" | relURL }}');"
+  >
+    <div class="inner">
+      <h1>Support Haggis Rugby</h1>
+      <p>
+        Interested in supporting Haggis Rugby? You can make a one-time
+        donation via our PayPal account below or you can contact us via 
+        <a href="mailto:haggisrfc@gmail.com" target="_blank">email</a> or 
+        <a href="https://facebook.com/HaggisRugby" target="_blank">Facebook</a>.
+      </p>
+      {{ partial "paypal" }}
+    </div>
+  </section>
 </section>
 
 {{ end }}

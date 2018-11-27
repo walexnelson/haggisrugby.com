@@ -1,11 +1,19 @@
 ---
-title: 'Park City Haggis Rugby'
+title: 'Park City Haggis RFC'
 subtitle: 'Est. 1972'
 image: images/haggis-shield.svg
 sponsor: Thank you to our sponsors - without them we wouldn't be able to do what we do. Please check them out.
-news: Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.
+news: "Haggis is undefeated going into the 2nd half of the 2018-2019 season. Be sure to follow us for all of the latest news and come support
+us in our first home game on April 6th."
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non neque nibh. Suspendisse a justo interdum, laoreet libero eget, aliquet arcu. Cras interdum velit eros, eu gravida arcu dapibus a. Curabitur elementum dignissim lorem et pellentesque. Nunc lectus dui, imperdiet nec nibh sagittis, dictum laoreet metus. Vestibulum faucibus felis eget lorem luctus bibendum. Aliquam mattis, magna a vehicula suscipit, augue risus porta lacus, quis varius arcu arcu sed nisi. Aliquam volutpat ullamcorper viverra. Praesent venenatis porta molestie. Mauris vulputate dolor quis massa aliquam facilisis. Suspendisse rhoncus nisl massa, eu porta quam venenatis at.
+Haggis RFC is Utah's oldest and most respected home for senior level rugby players in the state. The Haggis is committed to providing quality rugby training and competition at every skill and experience level. We are the 2005 USA Division II National Champions, and have produced a number of national team members through our program. A forthcoming surge of quality players through Utah's high school and collegiate ranks portends exciting and unprecedented success in the near future!
 
-Vivamus fermentum pretium leo a egestas. Proin non egestas mauris, sed mattis turpis. Sed consectetur porta ipsum, quis laoreet ligula. Praesent urna lectus, convallis id lacus nec, porttitor suscipit ex. Phasellus lobortis, risus vel laoreet pulvinar, velit metus laoreet nunc, eget mattis est diam et velit. Aliquam dictum nisi in pellentesque iaculis. Aliquam dapibus gravida quam, nec ultrices metus sollicitudin lobortis. Praesent ac ullamcorper elit. Pellentesque id fermentum tellus, vel volutpat lorem. Donec nec nibh ac ex pretium tincidunt non ac ipsum. Nullam ac mattis sem, sed rhoncus eros. Sed ut lobortis lorem. Vivamus eget interdum velit.
+## Want to play for Park City Haggis?
+
+If you are a man that is dedicated to upholding the highest standards of sportsmanship on and off the pitch, and if you are committed to challenging yourself to achieve greatness, we want you on our side.
+
+## Game Schedule
+
+Haggis plays in the [Rocky Mountain Premiership](http://www.rockymountainrugby.org/rmr-premiership-d2.html). Refer to RMR for league schedule and results, and be sure to follow Haggis on
+Facebook, Instagram, and Twitter for the latest news.
