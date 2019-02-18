@@ -54,15 +54,16 @@
       </p>
 
       <div class="features">
-        {{ range.Pages.ByParam "priority" }}
-          <section class="sponsor">
-            <div class="brand"><img src="{{ .Params.image }}" alt="{{ .Title }}" /></div>
-            <div class="content">
-              <h3>
-                <a href="{{.Permalink}}">{{ .Title }}</a>
-              </h3>
-              {{ .Summary }}
-            </div>
+        {{ range.Pages.ByParam "priority" "title" }}
+          {{ $className := "sponsor" }}
+          {{ if lt .Params.priority 2 }}
+            {{ $className = "sponsor primary" }}
+          {{ end }}
+
+          <section class="{{ $className }}">
+            <a class="brand" href="{{ .Params.link }}" target="_blank">
+              <img src="{{ .Params.image }}" alt="{{ .Title }}" />
+            </a>
           </section>
         {{ end }}
       </div>

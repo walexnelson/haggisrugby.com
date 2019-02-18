@@ -25,6 +25,6 @@ collections:
     fields:
       - { label: 'Name', name: 'title', widget: string }
       - { label: 'Logo', name: 'image', widget: image }
-      - { label: 'Description', name: body, widget: markdown }
+      - { label: 'Link', name: 'link', widget: string }
       - { label: 'Sort Priority', name: priority, widget: number, default: 0 }
       - { label: Type, name: type, widget: string, default: sponsor }

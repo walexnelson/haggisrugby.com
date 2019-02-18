@@ -1,7 +1,8 @@
 ---
 title: Zurixx
-image: images/zurixx-black.png
+image: images/zurixx-full-logo.png
 priority: 1
+link: https://zurixx.com/
 type: sponsor
 ---
 
