@@ -54,7 +54,7 @@
       </p>
 
       <div class="features">
-        {{ range.Pages.ByParam "priority" "title" }}
+        {{ range.Pages.ByParam "priority" }}
           {{ $className := "sponsor" }}
           {{ if lt .Params.priority 2 }}
             {{ $className = "sponsor primary" }}
